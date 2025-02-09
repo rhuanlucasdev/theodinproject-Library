@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="site-name">
+            <h2>ODIN LIBRARY</h2>
+        </div>
+        <div class="form-container">
+            <div class="form">
+                <div class="input-bar">
+                    <input type="text" id="bookTitle" placeholder="Title..." required>
+                </div>
+                <div class="input-bar">
+                    <input type="text" id="bookAuthor" placeholder="Author..." required>
+                </div>
+                <div class="input-bar">
+                    <input type="number" id="bookPages" placeholder="Pages..." required>
+                </div>
+                <div class="checkbox">
+                    Was it read?
+                    <input type="checkbox" id="bookRead">
+                </div>
+                <button id="addBookButton">Add book</button>
+            </div>
+        </div>
+        <div class="book-table">
+            <table id="bookTable">
+                <tr>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read?</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Edit Book</h2>
+                <div class="modal-form">
+                    <div class="input-bar">
+                        Title:
+                        <input class="modal-input" type="text" id="editBookTitle" placeholder="Book title" required />
+                    </div>
+                    <div class="input-bar">
+                        Author:
+                        <input class="modal-input" type="text" id="editBookAuthor" placeholder="Author name" required />
+                    </div>
+                    <div class="input-bar">
+                        How many pages?
+                        <input class="modal-input" type="number" id="editBookPages" placeholder="Number of pages" required />
+                    </div>
+                    <div class="checkbox">
+                        Have you read it?
+                        <input type="checkbox" id="editBookRead" />
+                    </div>
+                    <button id="saveChangesButton">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
